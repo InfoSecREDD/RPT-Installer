@@ -24,7 +24,7 @@ sudo pacman -Syu --noconfirm
 # Install desired packages
 sudo pacman -S wifite john hcxtools hcxdumptool hashcat metasploit \
 routersploit reaver cowpatty postgresql python hydra wireshark tcpdump \
-base-devel --noconfirm
+base-devel aircrack-ng --noconfirm
 
 # Note: For packages like burpsuite which may not be available directly via pacman,
 # you could consider installing from AUR or alternative methods. Example using yay (AUR helper):
