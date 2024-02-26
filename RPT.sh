@@ -22,27 +22,43 @@ sudo pacman-key --populate holo
 sudo pacman -Syu --noconfirm
 
 # Install desired packages
+echo "  --> Installing Wifite"
 sudo pacman -S wifite --noconfirm
+echo "  --> Installing John the Ripper"
 sudo pacman -S john --noconfirm
+echo "  --> Installing hcxtools"
 sudo pacman -S hcxtools --noconfirm
+echo "  --> Installing hcxdumptool"
 sudo pacman -S hcxdumptool --noconfirm
+echo "  --> Installing hashcat"
 sudo pacman -S hashcat --noconfirm
+echo "  --> Installing Metasploit"
 sudo pacman -S metasploit --noconfirm
+echo "  --> Installing Routersploit"
 sudo pacman -S routersploit --noconfirm
+echo "  --> Installing Reaver"
 sudo pacman -S reaver --noconfirm
+echo "  --> Installing cowpatty"
 sudo pacman -S cowpatty --noconfirm
+echo "  --> Installing PostgreSQL"
 sudo pacman -S postgresql --noconfirm
+echo "  --> Installing Hydra"
 sudo pacman -S hydra --noconfirm
+echo "  --> Installing wireshark"
 sudo pacman -S wireshark --noconfirm
+echo "  --> Installing tcpdump"
 sudo pacman -S tcpdump --noconfirm
+echo "  --> Installing base-devel tools"
 sudo pacman -S base-devel --noconfirm
+echo "  --> Installing aircrack-ng"
 sudo pacman -S aircrack-ng --noconfirm
 
-# Note: For packages like burpsuite which may not be available directly via pacman,
-# you could consider installing from AUR or alternative methods. Example using yay (AUR helper):
+# AUR Packages
+echo "  --> Attempting to install Burpsuite" 
 yay -S burpsuite --noconfirm
 
 # Setup METASPLOIT
+echo "  --> Setting Up Metasploit"
 sudo msfdb init
 
 # All Done
