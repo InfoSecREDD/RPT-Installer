@@ -5,7 +5,7 @@
 ```bash
 curl -sSL https://raw.githubusercontent.com/InfoSecREDD/RPT-Installer/main/RPT.sh | bash -
 ```
-
+OR
 ```bash
 wget -qO- https://raw.githubusercontent.com/InfoSecREDD/RPT-Installer/main/RPT.sh | bash -
 ```
