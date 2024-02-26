@@ -3,5 +3,9 @@
 
 
 ```bash
-curl -sL https://raw.githubusercontent.com/InfoSecREDD/RPT-Installer/main/RPT.sh | bash
+curl -sSL https://raw.githubusercontent.com/InfoSecREDD/RPT-Installer/main/RPT.sh | bash -
+```
+
+```bash
+wget -qO- https://raw.githubusercontent.com/InfoSecREDD/RPT-Installer/main/RPT.sh | bash -
 ```
