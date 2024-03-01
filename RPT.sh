@@ -84,11 +84,6 @@ yay -S sherlock-git --noconfirm
 echo "  --> Attempting to install The Harvester (git)" 
 yay -S theharvester-git --noconfirm
 
-
-# Setup METASPLOIT
-echo "  --> Setting Up Metasploit"
-msfdb init
-
 # All Done
 cd
 echo "Installation Script Complete."
