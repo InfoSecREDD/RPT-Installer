@@ -90,4 +90,5 @@ echo "  --> Setting Up Metasploit"
 msfdb init
 
 # All Done
+cd
 echo "Installation Script Complete."
