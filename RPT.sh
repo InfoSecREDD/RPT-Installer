@@ -18,10 +18,6 @@ sudo pacman-key --init
 sudo pacman-key --populate archlinux
 sudo pacman-key --populate holo
 
-# Add BlackArch Repos to the Steam Deck
-sudo curl -O https://blackarch.org/strap.sh
-sudo chmod +x strap.sh
-sudo bash strap.sh
 
 # Update pacman database and upgrade the system
 sudo pacman -Syu --noconfirm
@@ -65,7 +61,10 @@ echo "  --> Installing "
 sudo pacman -S aircrack-ng --noconfirm
 
 # Install yay on Steam Deck
-sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
+cd
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
 # AUR Packages
 echo "  --> Attempting to install Burpsuite" 
