@@ -68,7 +68,7 @@ sudo pacman -S aircrack-ng --noconfirm
 cd
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
-makepkg -si
+yes | makepkg -si
 
 # AUR Packages
 echo "  --> Attempting to install Burpsuite" 
