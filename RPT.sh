@@ -71,18 +71,18 @@ cd yay-bin
 yes | makepkg -si
 
 # AUR Packages
-echo "  --> Attempting to install Burpsuite" 
-yay -S burpsuite --noconfirm
-echo "  --> Attempting to install Crunch" 
-yay -S crunch --noconfirm
-echo "  --> Attempting to install Cewl (git)" 
-yay -S cewl-git --noconfirm
-echo "  --> Attempting to install python-certipy (git)" 
-yay -S python-certipy --noconfirm
-echo "  --> Attempting to install Sherlock (git)" 
-yay -S sherlock-git --noconfirm
-echo "  --> Attempting to install The Harvester (git)" 
-yay -S theharvester-git --noconfirm
+#echo "  --> Attempting to install Burpsuite" 
+#yay -S burpsuite --noconfirm
+#echo "  --> Attempting to install Crunch" 
+#yay -S crunch --noconfirm
+#echo "  --> Attempting to install Cewl (git)" 
+#yay -S cewl-git --noconfirm
+#echo "  --> Attempting to install python-certipy (git)" 
+#yay -S python-certipy --noconfirm
+#echo "  --> Attempting to install Sherlock (git)" 
+#yay -S sherlock-git --noconfirm
+#echo "  --> Attempting to install The Harvester (git)" 
+#yay -S theharvester-git --noconfirm
 
 # All Done
 cd
