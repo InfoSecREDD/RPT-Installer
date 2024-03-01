@@ -72,17 +72,17 @@ yes | makepkg -si
 
 # AUR Packages
 echo "  --> Attempting to install Burpsuite" 
-sudo yay -S burpsuite --noconfirm
+yay -S burpsuite --noconfirm
 echo "  --> Attempting to install Crunch" 
-sudo yay -S crunch --noconfirm
+yay -S crunch --noconfirm
 echo "  --> Attempting to install Cewl (git)" 
-sudo yay -S cewl-git --noconfirm
+yay -S cewl-git --noconfirm
 echo "  --> Attempting to install python-certipy (git)" 
-sudo yay -S python-certipy --noconfirm
+yay -S python-certipy --noconfirm
 echo "  --> Attempting to install Sherlock (git)" 
-sudo yay -S sherlock-git --noconfirm
+yay -S sherlock-git --noconfirm
 echo "  --> Attempting to install The Harvester (git)" 
-sudo yay -S theharvester-git --noconfirm
+yay -S theharvester-git --noconfirm
 
 
 # Setup METASPLOIT
