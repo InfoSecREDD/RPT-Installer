@@ -6,6 +6,10 @@
 # 
 # Enjoy!
 
+if [ $EUID -eq 0 ]; then
+    echo "Script cannot be run as root. Exiting..."
+    exit 1
+fi
 
 
 # Disable SteamOS read-only mode (if applicable)
@@ -83,7 +87,7 @@ sudo yay -S theharvester-git --noconfirm
 
 # Setup METASPLOIT
 echo "  --> Setting Up Metasploit"
-sudo msfdb init
+msfdb init
 
 # All Done
 echo "Installation Script Complete."
