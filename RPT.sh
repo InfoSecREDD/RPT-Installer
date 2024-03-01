@@ -18,6 +18,11 @@ sudo pacman-key --init
 sudo pacman-key --populate archlinux
 sudo pacman-key --populate holo
 
+# Add BlackArch Repos to the Steam Deck
+sudo curl -O https://blackarch.org/strap.sh
+sudo chmod +x strap.sh
+sudo bash strap.sh
+
 # Update pacman database and upgrade the system
 sudo pacman -Syu --noconfirm
 
@@ -45,17 +50,35 @@ sudo pacman -S postgresql --noconfirm
 echo "  --> Installing Hydra"
 sudo pacman -S hydra --noconfirm
 echo "  --> Installing wireshark"
-sudo pacman -S wireshark --noconfirm
+sudo pacman -S wireshark-qt --noconfirm
 echo "  --> Installing tcpdump"
 sudo pacman -S tcpdump --noconfirm
 echo "  --> Installing base-devel tools"
 sudo pacman -S base-devel --noconfirm
 echo "  --> Installing aircrack-ng"
 sudo pacman -S aircrack-ng --noconfirm
+echo "  --> Installing Ghidra"
+sudo pacman -S ghidra --noconfirm
+echo "  --> Installing GDB (Debugger)"
+sudo pacman -S gdb --noconfirm
+echo "  --> Installing "
+sudo pacman -S aircrack-ng --noconfirm
+
 
 # AUR Packages
 echo "  --> Attempting to install Burpsuite" 
-yay -S burpsuite --noconfirm
+sudo yay -S burpsuite --noconfirm
+echo "  --> Attempting to install Crunch" 
+sudo yay -S crunch --noconfirm
+echo "  --> Attempting to install Cewl (git)" 
+sudo yay -S cewl-git --noconfirm
+echo "  --> Attempting to install python-certipy (git)" 
+sudo yay -S python-certipy --noconfirm
+echo "  --> Attempting to install Sherlock (git)" 
+sudo yay -S sherlock-git --noconfirm
+echo "  --> Attempting to install The Harvester (git)" 
+sudo yay -S theharvester-git --noconfirm
+
 
 # Setup METASPLOIT
 echo "  --> Setting Up Metasploit"
