@@ -64,6 +64,8 @@ sudo pacman -S gdb --noconfirm
 echo "  --> Installing "
 sudo pacman -S aircrack-ng --noconfirm
 
+# Install yay on Steam Deck
+sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
 
 # AUR Packages
 echo "  --> Attempting to install Burpsuite" 
