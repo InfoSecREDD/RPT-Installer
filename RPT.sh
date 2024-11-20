@@ -15,6 +15,9 @@ fi
 # Disable SteamOS read-only mode (if applicable)
 sudo steamos-readonly disable
 
+# Install the Arch Linux keyring package to ensure proper key management
+sudo pacman -S archlinux-keyring
+
 # Initialize the pacman keyring
 sudo pacman-key --init
 
@@ -22,6 +25,8 @@ sudo pacman-key --init
 sudo pacman-key --populate archlinux
 sudo pacman-key --populate holo
 
+# Install git and base-devel (development tools) if not already installed
+sudo pacman -S --needed git base-devel
 
 # Update pacman database and upgrade the system
 sudo pacman -Syu --noconfirm
@@ -68,6 +73,8 @@ sudo pacman -S aircrack-ng --noconfirm
 cd
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
+# Check out a specific commit for yay-bin
+git checkout cb857e898d7081a60cf8742d26247fd6a3c5443c
 yes | makepkg -si
 
 # AUR Packages
